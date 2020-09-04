@@ -1,0 +1,29 @@
+var n = prompt("Please enter number of rows");
+n=eval(n);
+var s=n-1;
+for(var i=1;i<=n;i++)
+{
+     for (var c = 1;c<=s;c++)
+      document.write(" ");
+
+    s--;
+
+     for(c=1;c<=2*i-1;c++)
+         document.write("*");
+         
+     document.write("<br>");
+}
+s=1;
+
+for(i=1;i<=n-1;i++)
+{
+   for(c=1;c<=s;c++) 
+    document.write(" ");
+    
+    s++;
+    
+    for(c=1;c<=2*(n-i)-1;c++)
+     document.write("*");
+     
+    document.write("<br>");
+}
